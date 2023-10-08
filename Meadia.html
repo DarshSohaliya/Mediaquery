@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<style>
+    .conatinar{
+          display: flex;
+         
+    }
+    .box{
+          height: 200px;
+          width: 200px;
+          border: solid black 1px;
+          margin: 2px;
+    }
+    .box1{
+        background-color: red;
+    }
+    .box3{
+        background-color: blue;
+    }
+    @media  screen and (max-width: 768px)
+    {
+        
+       .conatinar{
+        display: flex; 
+        flex-direction: column; 
+        /* display: none; */
+        align-items: center;
+       } 
+       .box{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+       }
+    }
+</style>
+<body>
+    <div class="conatinar">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>
